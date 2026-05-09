@@ -13,7 +13,9 @@
 
 [Download Power BI Dashboard (.pbix)](PrimeVideoDashboard.pbix)
 
-![Dashboard](https://i.ibb.co/S7Qtjt3r/Prime-Video-Dashboard.png)
+<p align="center">
+  <img src="https://i.ibb.co/S7Qtjt3r/Prime-Video-Dashboard.png" width="900">
+</p>
 
 - **Business Problem:** Amazon Prime Video wants to gather useful insights on their shows and movies for their subscribers. The problem is they are working with a large amount of data across two tables, nearly 10,000 titles and 124,000 cast and crew records, and need a way to effectively analyze and extract meaningful insights from it. They need a data analytics solution to uncover valuable patterns and trends around content quality, audience ratings, country of origin, and talent.
 

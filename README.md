@@ -9,6 +9,12 @@
 
 [SQL Analysis (Code)](amazon_prime_analysis.sql)
 
+## Dashboard
+
+[Download Power BI Dashboard (.pbix)](PrimeVideoDashboard.pbix)
+
+![Dashboard](https://i.ibb.co/S7Qtjt3r/Prime-Video-Dashboard.png)
+
 - **Business Problem:** Amazon Prime Video wants to gather useful insights on their shows and movies for their subscribers. The problem is they are working with a large amount of data across two tables, nearly 10,000 titles and 124,000 cast and crew records, and need a way to effectively analyze and extract meaningful insights from it. They need a data analytics solution to uncover valuable patterns and trends around content quality, audience ratings, country of origin, and talent.
 
 - **How I Plan On Solving the Problem:** Using SQL in DB Browser for SQLite, I will query both the titles and credits datasets to answer key business questions. By leveraging SQL functions like AVG, COUNT, GROUP BY, JOIN, and HAVING, I can uncover metrics such as IMDB ratings, content volume by country and decade, top performing actors and directors, and age certification trends. Once the data has been extracted, I will use Power BI to present the findings through an interactive dashboard.

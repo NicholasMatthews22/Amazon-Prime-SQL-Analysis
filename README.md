@@ -95,25 +95,7 @@ Result:
 
 Shows came in with a noticeably higher average IMDB score at 7.12 compared to movies at 5.8. That is a pretty significant gap and suggests that Amazon Prime's TV catalog tends to be better received by audiences. It could mean that their original and licensed shows are higher quality productions, or simply that the movie library has a lot more low-budget titles pulling the average down.
 
-## 3. Which genre combinations have the highest average IMDB scores?
-
-```sql
-SELECT genres, ROUND(AVG(imdb_score), 2)
-FROM titles
-WHERE genres IS NOT NULL
-AND imdb_score IS NOT NULL
-GROUP BY genres
-ORDER BY imdb_score DESC
-LIMIT 10;
-```
-
-Result:
-
-![Q6](https://i.ibb.co/sLjK3Hm/Q6.png)
-
-Sport-related and drama-heavy genre combinations tend to score the highest on the platform. Worth noting that genres in this dataset are stored as combined lists rather than individual tags, so the results here reflect full genre combinations rather than single genres. This is a known data limitation that I acknowledged throughout the analysis.
-
-## 4. Which production countries output the most content on Amazon Prime?
+## 3. Which production countries output the most content on Amazon Prime?
 
 ```sql
 SELECT production_countries, COUNT(*)
@@ -129,7 +111,7 @@ Result:
 
 The United States leads by a wide margin with 4,810 titles, followed by India with 1,048 and the UK with 667. This makes sense given Amazon's roots, but the strong showing from India is notable and lines up with what we saw in the top IMDB scores. Like genres, production countries are also stored as lists in this dataset, which is another noted data limitation.
 
-## 5. Who are the most frequently appearing actors on Amazon Prime?
+## 4. Who are the most frequently appearing actors on Amazon Prime?
 
 ```sql
 SELECT name, COUNT(*) as appearances
@@ -146,7 +128,7 @@ Result:
 
 George 'Gabby' Hayes leads with 49 appearances, followed by Roy Rogers at 45 and Bess Flowers at 44. The fact that the top actors are all classic Hollywood era names tells you something interesting about Amazon Prime's catalog. They clearly have a deep library of older films, particularly westerns from the 1930s and 1940s.
 
-## 6. Which directors have the highest average IMDB score with a minimum of 2 titles?
+## 5. Which directors have the highest average IMDB score with a minimum of 2 titles?
 
 ```sql
 SELECT name, ROUND(AVG(t.imdb_score), 2) as avg_score, COUNT(*) as titles
@@ -166,7 +148,7 @@ Result:
 
 Jeethu Joseph tops the list with an average IMDB score of 8.5 across 2 titles. Seeing James Cameron in the top 10 helps validate that the metric is working correctly. The minimum of 2 titles requirement was important here to make sure the results reflect consistent quality rather than just one great film inflating a director's average.
 
-## 7. How many titles fall into each decade in Amazon Prime's library?
+## 6. How many titles fall into each decade in Amazon Prime's library?
 
 ```sql
 SELECT CONCAT(FLOOR(release_year / 10) * 10, 's') AS decade,
@@ -182,7 +164,7 @@ Result:
 
 Amazon Prime's catalog goes all the way back to the 1910s which was surprising. Content volume stays relatively modest through most of the 20th century before taking off in the 2000s. The 2010s saw a massive spike with 4,315 titles, which lines up with the global streaming boom and Amazon aggressively building out their library during that period.
 
-## 8. How does average IMDB score vary by age certification?
+## 7. How does average IMDB score vary by age certification?
 
 ```sql
 SELECT age_certification, ROUND(AVG(imdb_score), 2) as avg_score, COUNT(*) as titles

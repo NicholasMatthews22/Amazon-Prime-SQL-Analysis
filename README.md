@@ -1,4 +1,4 @@
-# Amazon Prime Video — SQL Content Analysis
+<h1 align="center">Amazon Prime Video — SQL Content Analysis</h1>
 <p align="center">
   <img src="https://i.pcmag.com/imagery/reviews/02dIsBiVpmVTMeXkrKxWy0W-13..v1582749138.png" width="600">
 </p>

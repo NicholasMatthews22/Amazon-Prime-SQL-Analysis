@@ -5,7 +5,7 @@
 
 **Tools Used:** SQLite, Excel, Power BI
 
-[Dataset Used](https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies)
+[Dataset Used](https://www.kaggle.com/datasets/victorsoeiro/amazon-prime-tv-shows-and-movies)
 
 [SQL Analysis (Code)](amazon_prime_analysis.sql)
 

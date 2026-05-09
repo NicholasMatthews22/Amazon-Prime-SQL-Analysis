@@ -1,6 +1,6 @@
 # Amazon Prime Video — SQL Content Analysis
 
-**Tools Used:** SQLite, DB Browser for SQLite, Power BI
+**Tools Used:** SQLite, Excel, Power BI
 
 [Dataset Used](https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies)
 

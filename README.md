@@ -1,5 +1,5 @@
 # Amazon Prime Video — SQL Content Analysis
-![Amazon Prime](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Prime_Video.png/1280px-Prime_Video.png)
+![Amazon Prime](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Amazon_Prime_Video_logo.svg/800px-Amazon_Prime_Video_logo.svg.png)
 
 **Tools Used:** SQLite, Excel, Power BI
 

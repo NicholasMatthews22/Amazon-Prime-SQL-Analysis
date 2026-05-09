@@ -32,7 +32,7 @@ LIMIT 10;
 
 Result:
 
-![Q1](Q1.png)
+![Q1](https://i.ibb.co/5gqmLM2h/Q1.png)
 
 * Bottom 10 Movies
 
@@ -47,7 +47,7 @@ LIMIT 10;
 
 Result:
 
-![Q2](Q2.png)
+![Q2](https://i.ibb.co/My40tWhp/Q2.png)
 
 * Top 10 Shows
 
@@ -62,7 +62,7 @@ LIMIT 10;
 
 Result:
 
-![Q3](Q3.png)
+![Q3](https://i.ibb.co/tMqz6Bbh/Q3.png)
 
 * Bottom 10 Shows
 
@@ -77,7 +77,7 @@ LIMIT 10;
 
 Result:
 
-![Q4](Q4.png)
+![Q4](https://i.ibb.co/WWSgw6vJ/Q4.png)
 
 The top 10 movies and shows had some impressive IMDB scores, with Pawankhind leading movies at 9.9 and Water Helps the Blood Run leading shows at 9.7. One thing that stood out is how much Indian cinema dominates the top movie rankings, which shows Amazon Prime has made a strong push into international content. On the flip side, the bottom 10 titles scored as low as 1.1 for movies and 1.3 for shows, highlighting just how wide the quality range is across the platform.
 
@@ -91,7 +91,7 @@ GROUP BY type;
 
 Result:
 
-![Q5](Q5.png)
+![Q5](https://i.ibb.co/7dhqFYfB/Q5.png)
 
 Shows came in with a noticeably higher average IMDB score at 7.12 compared to movies at 5.8. That is a pretty significant gap and suggests that Amazon Prime's TV catalog tends to be better received by audiences. It could mean that their original and licensed shows are higher quality productions, or simply that the movie library has a lot more low-budget titles pulling the average down.
 
@@ -109,7 +109,7 @@ LIMIT 10;
 
 Result:
 
-![Q6](Q6.png)
+![Q6](https://i.ibb.co/sLjK3Hm/Q6.png)
 
 Sport-related and drama-heavy genre combinations tend to score the highest on the platform. Worth noting that genres in this dataset are stored as combined lists rather than individual tags, so the results here reflect full genre combinations rather than single genres. This is a known data limitation that I acknowledged throughout the analysis.
 
@@ -125,7 +125,7 @@ LIMIT 10;
 
 Result:
 
-![Q7](Q7.png)
+![Q7](https://i.ibb.co/fdgsgDHM/Q7.png)
 
 The United States leads by a wide margin with 4,810 titles, followed by India with 1,048 and the UK with 667. This makes sense given Amazon's roots, but the strong showing from India is notable and lines up with what we saw in the top IMDB scores. Like genres, production countries are also stored as lists in this dataset, which is another noted data limitation.
 
@@ -142,7 +142,7 @@ LIMIT 10;
 
 Result:
 
-![Q8](Q8.png)
+![Q8](https://i.ibb.co/ZRDCgBbV/Q8.png)
 
 George 'Gabby' Hayes leads with 49 appearances, followed by Roy Rogers at 45 and Bess Flowers at 44. The fact that the top actors are all classic Hollywood era names tells you something interesting about Amazon Prime's catalog. They clearly have a deep library of older films, particularly westerns from the 1930s and 1940s.
 
@@ -162,7 +162,7 @@ LIMIT 10;
 
 Result:
 
-![Q9](Q9.png)
+![Q9](https://i.ibb.co/fWXcJ66/Q9.png)
 
 Jeethu Joseph tops the list with an average IMDB score of 8.5 across 2 titles. Seeing James Cameron in the top 10 helps validate that the metric is working correctly. The minimum of 2 titles requirement was important here to make sure the results reflect consistent quality rather than just one great film inflating a director's average.
 
@@ -178,7 +178,7 @@ ORDER BY decade;
 
 Result:
 
-![Q10](Q10.png)
+![Q10](https://i.ibb.co/ksQ4XcMn/Q10.png)
 
 Amazon Prime's catalog goes all the way back to the 1910s which was surprising. Content volume stays relatively modest through most of the 20th century before taking off in the 2000s. The 2010s saw a massive spike with 4,315 titles, which lines up with the global streaming boom and Amazon aggressively building out their library during that period.
 
@@ -195,7 +195,7 @@ ORDER BY avg_score DESC;
 
 Result:
 
-![Q11](Q11.png)
+![Q11](https://i.ibb.co/CsYwqG3H/Q11.png)
 
 TV-PG content scores the highest on average at 7.43, with TV-MA close behind at 7.37. R-rated movies actually score the lowest among all certified content at 5.67. This pattern suggests that TV content across the board tends to be better received than movies, which ties back to what we found in question 2.
 
